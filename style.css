@@ -1,4 +1,4 @@
-/* CSS untuk tombol pop up */
+/* CSS untuk tombol pop-up */
 .popup-button {
   background-color: #4CAF50;
   color: white;
@@ -6,6 +6,14 @@
   border: none;
   cursor: pointer;
   font-size: 16px;
+}
+
+/* CSS untuk video pop-up pada layar kecil */
+@media screen and (max-width: 768px) {
+  #popup-video {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* CSS untuk tombol next dan previous */
@@ -16,4 +24,18 @@
   border: none;
   cursor: pointer;
   font-size: 16px;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.landscape {
+  transform: none !important;
+}
+
+.portrait {
+  transform: rotate(90deg) !important;
 }
